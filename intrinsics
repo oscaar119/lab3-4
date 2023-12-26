@@ -418,4 +418,3 @@ float dot_product_intrinsic(float * vec1, float *  vec2, int n)
 	return result;
 }
 
-
