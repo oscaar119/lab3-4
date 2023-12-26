@@ -50,7 +50,6 @@
 #include "xil_printf.h"
 #include "xil_io.h"
 #include "xiicps.h"
-#include "arm_neon.h"
 #include "timer_ps.h"
 #include <time.h>
 #include <stdlib.h>
@@ -127,7 +126,6 @@ XIicPs Iic;		/* Instance of the IIC Device */
 
 float applyFilter(float *buffer);
 void shiftBuffer(float curr_sample, float *buffer);
-float dot_product_intrinsic(float * vec1, float *  vec2, int n);
 
 int AudioRegSet(XIicPs *IIcPtr, u8 regAddr, u16 regData)
 {
